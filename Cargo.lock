@@ -2045,7 +2045,7 @@ dependencies = [
 
 [[package]]
 name = "pglite-oxide"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2079,23 +2079,23 @@ dependencies = [
 
 [[package]]
 name = "pglite-oxide-aot-aarch64-apple-darwin"
-version = "0.4.0"
+version = "0.4.1"
 
 [[package]]
 name = "pglite-oxide-aot-aarch64-unknown-linux-gnu"
-version = "0.4.0"
+version = "0.4.1"
 
 [[package]]
 name = "pglite-oxide-aot-x86_64-pc-windows-msvc"
-version = "0.4.0"
+version = "0.4.1"
 
 [[package]]
 name = "pglite-oxide-aot-x86_64-unknown-linux-gnu"
-version = "0.4.0"
+version = "0.4.1"
 
 [[package]]
 name = "pglite-oxide-assets"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
  "serde",
  "serde_json",

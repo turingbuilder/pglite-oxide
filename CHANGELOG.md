@@ -7,6 +7,19 @@ and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.4.1](https://github.com/f0rr0/pglite-oxide/compare/0.4.0...0.4.1) - 2026-05-07
+
+### Fixed
+
+- Publish release crates from the validated staged workspace so the
+  `pglite-oxide-assets` and target-specific AOT crates include their generated
+  payloads ([#25](https://github.com/f0rr0/pglite-oxide/pull/25),
+  [#24](https://github.com/f0rr0/pglite-oxide/issues/24)).
+- Release all internal asset/AOT crates at `0.4.1` alongside the root crate so
+  the fixed release cannot resolve to broken `0.4.0` payload packages.
+- Guard release validation against root/internal package version drift and
+  Cargo's same-release internal dependency dry-run wording.
+
 ## [0.4.0](https://github.com/f0rr0/pglite-oxide/compare/0.3.0...0.4.0) - 2026-05-07
 
 > **Known broken release:** The crates.io packages for `0.4.0` were published
