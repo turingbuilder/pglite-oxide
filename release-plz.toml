@@ -3,9 +3,10 @@ allow_dirty = true
 changelog_update = true
 dependencies_update = true
 features_always_increment_minor = false
-git_release_enable = true
+git_release_enable = false
 git_release_name = "{{ package }} v{{ version }}"
-git_tag_name = "{{ package }}-v{{ version }}"
+git_tag_enable = false
+git_tag_name = "{{ version }}"
 pr_branch_prefix = "release-plz-"
 pr_labels = ["release"]
 pr_name = "chore(release): {{ version }}"
@@ -13,7 +14,6 @@ publish = true
 publish_allow_dirty = true
 publish_timeout = "30m"
 release_always = true
-release_commits = '^((feat|fix|perf|refactor|revert)(\([a-z0-9][a-z0-9._/-]*\))?(!)?|[a-z]+(\([a-z0-9][a-z0-9._/-]*\))?!): .+'
 repo_url = "https://github.com/f0rr0/oliphaunt"
 semver_check = true
 
@@ -47,6 +47,7 @@ changelog_include = [
   "pglite-oxide-aot-x86_64-pc-windows-msvc",
 ]
 git_release_enable = true
+git_tag_enable = true
 git_tag_name = "{{ version }}"
 
 [[package]]
